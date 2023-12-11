@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Afacad", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+Button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+    background-color: lightcoral;
+    color: white;
+}
+
+Button:hover {
+    background-color: rgb(192, 104, 104);
+}
+
+.secondary-button {
+    background-color: #5abb9e;
+}
+
+.secondary-button:hover {
+    background-color: #339678;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid lightcoral;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.create-post-form {
+    width: 175px;
+}
+
+.post-form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-selector {
+    width: 100%;
+}
+
+.post-form-input input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid lightcoral;
+    width: 100%;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.filter-buttons button {
+    background-color: #5abb9e;
+}
+
+.filter-buttons button:hover {
+    background-color: #339678;
+}
+
+.filter-buttons span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-buttons ul {
+    list-style-type: none;
+    box-shadow: 0 0 5px black;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+.filter-buttons li {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.user-filter {
+    width: 100%;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.per-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 500;
+    border: 1px solid lightcoral;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pagination a {
+    font-size: 20px;
+    cursor: pointer;
+    color: #5abb9e;
+}
+
+.pagination a:hover {
+    color: #339678;
+}
+
+.pagination .active {
+    color: rgb(192, 104, 104);
+}
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.post {
+    width: 360px;
+    position: relative;
+    padding: 10px;
+    border: 3px solid lightcoral;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.post-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-wrap: break-word;
+}
+
+.post-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.post-user {
+    font-weight: 700;
+}
+
+.post-text {
+    text-align: start;
+}
+
+.favorite-button-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.favorite-button-wrapper button:hover {
+    background: none;
+}
+
+.post-buttons {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.post-buttons button {
+    width: 100%;
+}
+
+.post-comments {
+    margin-top: 10px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.favorite-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.favorite-button:hover {
+    background-color: none;
+}
+
+.favorite-button svg {
+    cursor: pointer;
+}
+
+.favorited svg {
+    fill: rgb(255, 169, 40);
+}
+
+.post-comments-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comment-user {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.comment-mail {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.comment-text {
+    font-size: 17px;
+    font-weight: 500;
+}
